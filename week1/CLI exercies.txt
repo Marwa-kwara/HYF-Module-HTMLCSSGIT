@@ -1,0 +1,21 @@
+1-How do I create a hidden file or folder? How do I display it in the CLI?
+To create a hidden file or folder we use touch or mkdir then we add a dot right before the file/folder name.
+mkdir .folder name
+touch .file name
+To display only hidden items :ls -ld .?* 
+or
+ls -ald .*
+
+to display all items :ls -a
+
+
+2-How do I create multiple nested directories?
+by using mkdir -p folder/subfolder/subfolder
+
+
+3-How do I append a message to a file, without a newline character?
+To append a message with a newline character we use : echo -e "first message \nsecond message">>file.txt
+but if we want it without newline character then we use:
+echo "first message">> file.txt
+echo "second message">> file.txt
+
